@@ -1,6 +1,11 @@
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
 body{
     margin: 0;
     background-color:black;
@@ -53,6 +58,7 @@ header nav a{
 }
 
 /* carousel */
+
 .carousel{
     position: relative;
     height: 800px;
@@ -408,66 +414,18 @@ header nav a{
     transform: translate(-100%, -50%) rotate(90deg);
     filter: blur(130px);
 }
-@media screen and (max-width: 991px){
-    /* ipad, tablets */
-    .carousel .list .item{
-        width: 90%;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
-        overflow: auto;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail .title{
-        font-size: 2em;
-    }
-}
-@media screen and (max-width: 767px){
-    /* mobile */
-    .carousel{
-        height: 600px;
-    }
-    .carousel .list .item{
-        width: 100%;
-        font-size: 10px;
-    }
-    
-    .carousel .list{
-        height: 100%;
-    }
-    .carousel .list .item:nth-child(2) .introduce{
-        width: 50%;
-    }
-    
-    .carousel .list .item img{
-        width: 40%;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail{
-        backdrop-filter: blur(10px);
-        font-size: small;
-    }
-    .carousel .list .item:nth-child(2) .introduce .des,
-    .carousel.showDetail .list .item:nth-child(2) .detail .des{
-        height: 100px;
-        overflow: auto;
-    }
-    .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
-        display: flex;
-        width: max-content;
-        float: right;
-    }
-}
-
 
 /* shop section */
 
 
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
+
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(14, 98%, 50%);
   --black-color: hsl(0, 0%, 0%);
@@ -480,6 +438,8 @@ header nav a{
   --container-color: hsl(0, 0%, 0%);
 
   /*========== Font and typography ==========*/
+
+
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Bai Jamjuree", sans-serif;
   --biggest-font-size: 2.5rem;
@@ -501,20 +461,11 @@ header nav a{
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
-@media screen and (min-width: 1150px) {
-  :root {
-    --biggest-font-size: 4.5rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
-}
+
 
 /*=============== BASE ===============*/
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -556,6 +507,8 @@ img {
 }
 
 /*=============== THEME ===============*/
+
+
 .nav__buttons {
   display: flex;
   align-items: center;
@@ -570,6 +523,8 @@ img {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -628,6 +583,9 @@ img {
 }
 
 /*=============== BUTTON ===============*/
+
+
+
 .button {
   display: flex;
   align-items: center;
@@ -653,6 +611,10 @@ img {
 }
 
 /*=============== PROJECTS ===============*/
+
+
+
+
 .projects {
   background-color: var(--container-color);
   transition: background-color 0.4s;
@@ -750,10 +712,115 @@ img {
   
 }
 
+/* end */
+
+
+
+/* footer */
+
+
+  
+  .footer{
+  background:#000;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color:gray;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color:gray;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color:#fff;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+/* end */
 
 
 
 /*=============== MEDIA QUERIES ===============*/
+
+/*=============== MEDIA QUERIES FOR CAROUSEL ===============*/
+
+
+
+@media screen and (max-width: 991px){
+  /* ipad, tablets */
+  .carousel .list .item{
+      width: 90%;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
+      overflow: auto;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail .title{
+      font-size: 2em;
+  }
+}
+@media screen and (max-width: 767px){
+  /* mobile */
+  .carousel{
+      height: 600px;
+  }
+  .carousel .list .item{
+      width: 100%;
+      font-size: 10px;
+  }
+  
+  .carousel .list{
+      height: 100%;
+  }
+  .carousel .list .item:nth-child(2) .introduce{
+      width: 50%;
+  }
+  
+  .carousel .list .item img{
+      width: 40%;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail{
+      backdrop-filter: blur(10px);
+      font-size: small;
+  }
+  .carousel .list .item:nth-child(2) .introduce .des,
+  .carousel.showDetail .list .item:nth-child(2) .detail .des{
+      height: 100px;
+      overflow: auto;
+  }
+  .carousel.showDetail .list .item:nth-child(2) .detail .checkout{
+      display: flex;
+      width: max-content;
+      float: right;
+  }
+}
+
+
+/*=============== MEDIA QUERIES FOR SEC2 ===============*/
+
+
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
@@ -807,51 +874,11 @@ img {
 
 }
 
-/* sec3 */
-
-/* footer */
 
 
-  
-  .footer{
-  background:#000;
-  padding:30px 0px;
-  font-family: 'Play', sans-serif;
-  text-align:center;
-  }
-  
-  .footer .row{
-  width:100%;
-  margin:1% 0%;
-  padding:0.6% 0%;
-  color:gray;
-  font-size:0.8em;
-  }
-  
-  .footer .row a{
-  text-decoration:none;
-  color:gray;
-  transition:0.5s;
-  }
-  
-  .footer .row a:hover{
-  color:#fff;
-  }
-  
-  .footer .row ul{
-  width:100%;
-  }
-  
-  .footer .row ul li{
-  display:inline-block;
-  margin:0px 30px;
-  }
-  
-  .footer .row a i{
-  font-size:2em;
-  margin:0% 1%;
-  }
-  
+/*=============== MEDIA QUERIES FOR FOOTER ===============*/
+
+
   @media (max-width:720px){
   .footer{
   text-align:left;
@@ -866,3 +893,19 @@ img {
   margin:0% 3%;
   }
   }
+
+/*=============== MEDIA QUERIES FOR Responsive typography  ===============*/
+
+
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
